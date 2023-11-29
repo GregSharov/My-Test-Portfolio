@@ -1,0 +1,389 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #3B3B3B;
+    background-color: #FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+}
+
+#portrait {
+    width: 40%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#portrait img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content {
+    display: block;
+    padding: 50px;
+    overflow-y: scroll;
+    width: 60%;
+}
+
+.hero {
+    padding: 20px;
+    margin-bottom: 70px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.hero span {
+    font-size: 1rem;
+}
+
+.resume {
+    margin: 50px 0 50px 0;
+    padding: 40px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.skills {
+    background-color: #1F1F1F;
+    color: #CCCCCC;;
+    padding: 40px;
+    box-shadow: 15px 15px 10px gray;
+    margin: 50px 0 70px 0;
+}
+
+.skills span {
+    color: #569CD6;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.projects {
+    padding: 40px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.projects > a img {
+    box-shadow: 5px 5px 10px gray;
+    width: 100%;
+    align-items: center;
+}
+
+.projects > a img:hover {
+    transform: scale(1.03);
+    transition: transform .5s ease-in-out;
+}
+
+.technologies {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+
+.technologies h5 {
+    color: #0A8001;
+}
+
+.technologies .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.about p {
+    width: 50%;
+}
+
+.contacts {
+    padding: 40px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+form input, textarea, #btn {
+    border-radius: 5px;
+    border-style: none;
+    height: 40px;
+    margin: 10px;
+    padding-left: 20px;
+    box-shadow: 5px 5px 15px gray;
+}
+
+form ::placeholder, #btn {
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    color: #B1B1B1;
+}
+
+form textarea {
+    padding-top: 15px;
+}
+
+#btn {
+    width: 50%;
+    background-color: lightgrey;
+    color: #929292;
+    text-align: start;
+}
+
+#btn:hover {
+    background-color: #919191;
+    color: #CCCCCC;
+}
+
+.footer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer h4, .social_contacts svg {
+    color: #B1B1B1;
+}
+
+.social_contacts {
+    display: flex;
+    justify-content: end;
+}
+
+.social_contacts svg {
+    height: 32px;
+    width: 32px;
+    padding-left: 30px;
+}
+
+.icons img {
+    height: 2rem;
+    padding: 0 30px 0 30px;
+}
+
+span {
+    color: #800000;
+    font-size: 0.70rem;
+}
+
+/* Media Responsivness */
+
+@media (min-width: 1680px) {
+    .hero {
+        font-size: 3rem;
+    }
+    
+    .hero span {
+        font-size: 1.7rem;
+    }
+
+    .resume, .projects, .about, .contacts {
+        font-size: 2.5rem;
+        padding: 75px;
+    }
+
+    .content span:not(.hero span) {
+        font-size: 1.4rem;
+    }
+
+    .education dt {
+        margin-top: 50px;
+    }
+
+    .skills {
+        margin: 100px 0 100px 0;
+        padding: 100px;
+    }
+
+    .projects {
+        margin-top: 150px;
+    }
+
+    .projects a>img {
+        margin: 80px 0 80px 0;
+    }
+
+    .projects .technologies img {
+        height: 80px;
+    }
+
+    .about p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .contacts {
+        text-align: center;
+    }
+
+    .contacts form input, textarea, #btn {
+        font-size: 2rem;
+        height: 5rem;
+    }
+
+    form {
+        margin: 50px 0 50px 0;
+    }
+
+    #btn {
+        width: 70%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #btn svg {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    .footer {
+        width: 95%;
+        margin: auto;
+    }
+
+    .social_contacts {
+        width: 30%;
+        justify-content: space-between;
+    }
+
+    .social_contacts svg {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .footer h4 {
+        font-size: 2rem;
+    }
+}
+
+/* max-width: 922px */
+
+@media (max-width: 922px) {
+    body {
+        display: block;
+    }
+
+    #portrait {
+        width: auto;
+    }
+
+    #portrait img {
+        width: 60%;
+        margin: 50px;
+    }
+
+    .content {
+        width: auto;
+        padding: 15px;
+    }
+
+    .hero {
+        font-size: 1.3rem;
+    }
+    
+    .hero span {
+        font-size: .90rem;
+    }
+
+    .resume, .projects, .about, .contacts {
+        font-size: 1.1rem;
+        padding: 80px;
+    }
+
+    .content span:not(.hero span) {
+        font-size: .70rem;
+    }
+
+    .education dt {
+        margin-top: 20px;
+    }
+
+    .skills {
+        margin: 80px 0 80px 0;
+        padding: 30px;
+    }
+
+    .projects {
+        margin: 100px 0 100px 0;
+    }
+
+    .projects a>img {
+        margin: 30px 0 30px 0;
+    }
+
+    .projects .technologies img {
+        height: 35px;
+    }
+
+    .about p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .contacts {
+        margin: 80px 0 80px 0;
+        text-align: center;
+    }
+
+    .contacts form input, textarea, #btn {
+        font-size: .70rem;
+        height: 2rem;
+    }
+
+    form {
+        width: 100%;
+        margin: 30px 0 30px 0;
+    }
+
+    #btn {
+        width: 60%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #btn svg {
+        width: .5rem;
+        height: .5rem;
+    }
+
+    .footer {
+        display: block;
+        width: 95%;
+        margin: auto;
+        align-content: center;
+        text-align: center;
+    }
+
+    .social_contacts {
+        width: auto;
+        justify-content: space-around;
+    }
+
+    .social_contacts svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .footer h4 {
+        font-size: 1rem;
+    }
+}
+
+/* max-width: 600px */
+
+@media (max-width: 600px) {
+    .resume, .projects, .about, .contacts {
+        padding: 20px;
+    }
+}

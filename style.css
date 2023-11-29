@@ -47,7 +47,8 @@ body {
 
 .skills {
     background-color: #1F1F1F;
-    color: #CCCCCC;;
+    color: #CCCCCC;
+    ;
     padding: 40px;
     box-shadow: 15px 15px 10px gray;
     margin: 50px 0 70px 0;
@@ -66,13 +67,13 @@ body {
     box-shadow: 5px 5px 10px gray;
 }
 
-.projects > a img {
+.projects>a img {
     box-shadow: 5px 5px 10px gray;
     width: 100%;
     align-items: center;
 }
 
-.projects > a img:hover {
+.projects>a img:hover {
     transform: scale(1.03);
     transition: transform .5s ease-in-out;
 }
@@ -114,7 +115,9 @@ form {
     width: 60%;
 }
 
-form input, textarea, #btn {
+form input,
+textarea,
+#btn {
     border-radius: 5px;
     border-style: none;
     height: 40px;
@@ -123,7 +126,8 @@ form input, textarea, #btn {
     box-shadow: 5px 5px 15px gray;
 }
 
-form ::placeholder, #btn {
+form ::placeholder,
+#btn {
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
     color: #B1B1B1;
@@ -134,10 +138,16 @@ form textarea {
 }
 
 #btn {
+    padding: 5px;
     width: 50%;
     background-color: lightgrey;
     color: #929292;
-    text-align: start;
+    text-align: center;
+}
+
+#btn svg {
+    height: 13px;
+    width: 13px;
 }
 
 #btn:hover {
@@ -152,7 +162,8 @@ form textarea {
     align-items: center;
 }
 
-.footer h4, .social_contacts svg {
+.footer h4,
+.social_contacts svg {
     color: #B1B1B1;
 }
 
@@ -183,12 +194,15 @@ span {
     .hero {
         font-size: 3rem;
     }
-    
+
     .hero span {
         font-size: 1.7rem;
     }
 
-    .resume, .projects, .about, .contacts {
+    .resume,
+    .projects,
+    .about,
+    .contacts {
         font-size: 2.5rem;
         padding: 75px;
     }
@@ -227,7 +241,9 @@ span {
         text-align: center;
     }
 
-    .contacts form input, textarea, #btn {
+    .contacts form input,
+    textarea,
+    #btn {
         font-size: 2rem;
         height: 5rem;
     }
@@ -291,12 +307,15 @@ span {
     .hero {
         font-size: 1.3rem;
     }
-    
+
     .hero span {
         font-size: .90rem;
     }
 
-    .resume, .projects, .about, .contacts {
+    .resume,
+    .projects,
+    .about,
+    .contacts {
         font-size: 1.1rem;
         padding: 80px;
     }
@@ -336,7 +355,9 @@ span {
         text-align: center;
     }
 
-    .contacts form input, textarea, #btn {
+    .contacts form input,
+    textarea,
+    #btn {
         font-size: .70rem;
         height: 2rem;
     }
@@ -347,7 +368,6 @@ span {
     }
 
     #btn {
-        width: 60%;
         text-align: center;
         margin-top: 20px;
     }
@@ -383,7 +403,11 @@ span {
 /* max-width: 600px */
 
 @media (max-width: 600px) {
-    .resume, .projects, .about, .contacts {
+
+    .resume,
+    .projects,
+    .about,
+    .contacts {
         padding: 20px;
     }
 }

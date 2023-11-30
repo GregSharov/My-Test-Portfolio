@@ -15,8 +15,8 @@ body {
 }
 
 #portrait img {
-    width: 110%;
-    height: 110%;
+    width: 120%;
+    height: 120%;
     object-fit: cover;
     object-position: center;
 }
@@ -280,6 +280,66 @@ span {
 
     .footer h4 {
         font-size: 2rem;
+    }
+}
+
+/* max-width: 1103px */
+
+@media (max-width: 1103px) {
+    .hero {
+        font-size: 1.2rem;
+    }
+
+    .hero span {
+        font-size: .90rem;
+    }
+
+    .resume,
+    .projects,
+    .about,
+    .contacts {
+        font-size: .85rem;
+        padding: 25px;
+    }
+
+    .content span:not(.hero span) {
+        font-size: .60rem;
+    }
+
+    .projects a>img {
+        margin: 30px 0 10px 0;
+    }
+
+    .about p {
+        width: 90%;
+        text-align: justify;
+    }
+
+    .contacts {
+        margin: 80px 0 80px 0;
+        text-align: center;
+    }
+
+    .contacts form input,
+    textarea,
+    #btn {
+        font-size: .90rem;
+        height: 2.2rem;
+    }
+
+    form {
+        width: 100%;
+        margin: 15px 0 30px 0;
+    }
+
+    #btn {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    #btn svg {
+        width: 1rem;
+        height: 1rem;
     }
 }
 

@@ -15,10 +15,13 @@ body {
 }
 
 #portrait img {
-    width: 120%;
-    height: 120%;
+    width: 115%;
+    height: 115%;
     object-fit: cover;
     object-position: center;
+    position: relative;
+    bottom: 60px;
+    right: 30px;
 }
 
 .content {
@@ -199,6 +202,11 @@ span {
         font-size: 1.7rem;
     }
 
+    #portrait img {
+        width: 110%;
+        height: 110%;
+    }
+
     .resume,
     .projects,
     .about,
@@ -357,6 +365,8 @@ span {
     #portrait img {
         width: 60%;
         margin: 50px;
+        bottom: 0;
+        right: 0;
     }
 
     .content {

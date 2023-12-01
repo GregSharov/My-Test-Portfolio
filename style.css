@@ -311,7 +311,7 @@ span {
     }
 
     .content span:not(.hero span) {
-        font-size: .60rem;
+        font-size: .50rem;
     }
 
     .projects a>img {
@@ -391,7 +391,7 @@ span {
     }
 
     .content span:not(.hero span) {
-        font-size: .60rem;
+        font-size: .55rem;
     }
 
     .education dt {

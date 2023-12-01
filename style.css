@@ -143,9 +143,10 @@ form textarea {
 #btn {
     padding: 5px;
     width: 50%;
-    background-color: lightgrey;
-    color: #929292;
+    background-color: #fff;
+    color: #2BB8FF;
     text-align: center;
+    cursor: pointer;
 }
 
 #btn svg {
@@ -154,8 +155,8 @@ form textarea {
 }
 
 #btn:hover {
-    background-color: #919191;
-    color: #CCCCCC;
+    background-color: #2BB8FF;
+    color: #fff;
 }
 
 .footer {
@@ -171,14 +172,36 @@ form textarea {
 }
 
 .social_contacts {
+    width: 30%;
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
 }
 
 .social_contacts svg {
     height: 32px;
     width: 32px;
-    padding-left: 30px;
+    border-radius: 35%;
+    padding: 5px;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.social_contacts svg:hover {
+    transform: scale(1.2);
+    transition: transform .5s ease-in-out;
+}
+
+.social_contacts .mail svg:hover {
+    color: #fff;
+    background-color: #2BB8FF;
+}
+
+.social_contacts .whatsapp svg:hover {
+    color: #fff;
+    background-color: #00CE00;
+}
+
+.social_contacts .github svg:hover {
+    color: #000;
 }
 
 .icons img {

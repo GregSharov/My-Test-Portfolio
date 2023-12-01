@@ -391,7 +391,7 @@ span {
     }
 
     .content span:not(.hero span) {
-        font-size: .70rem;
+        font-size: .60rem;
     }
 
     .education dt {
